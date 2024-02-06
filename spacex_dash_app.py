@@ -65,7 +65,7 @@ def get_pie_chart(entered_site):
         
     # Check if ALL sites are selected
     if entered_site == 'ALL':
-        fig = px.pie(filtered_df,names='class', title='Total Success Launches')
+        fig = px.pie(filtered_df,names='Launch Site', title='Total Success Launches')
     else:
         # If a specific launch site is selected, filter the dataframe for that site
         filtered_df = spacex_df[spacex_df['Launch Site'] == entered_site]
